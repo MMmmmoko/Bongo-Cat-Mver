@@ -59,7 +59,7 @@ namespace MyWpfApp
         {
             try
             {
-                HttpWebRequest oHttp_Web_Req = (HttpWebRequest)WebRequest.Create("http://150.158.110.86/bongocatpage/lastestversion.txt");
+                HttpWebRequest oHttp_Web_Req = (HttpWebRequest)WebRequest.Create();
                 oHttp_Web_Req.Timeout = 5000;
                 HttpWebResponse httpWebResponse = (HttpWebResponse)oHttp_Web_Req.GetResponse();
                 if (httpWebResponse.StatusCode != HttpStatusCode.RequestTimeout)
